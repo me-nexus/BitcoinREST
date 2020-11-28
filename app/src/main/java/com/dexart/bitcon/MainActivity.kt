@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         val info = workManager.getWorkInfosByTag("network")
         if (info.isCancelled) {
             val periodicWorkRequest =
-                PeriodicWorkRequest.Builder(NetworkWorker::class.java, 60, TimeUnit.SECONDS)
+                PeriodicWorkRequest.Builder(NetworkWorker::class.java, 30, TimeUnit.SECONDS)
                     .addTag("network")
                     .build()
             workManager.enqueue(periodicWorkRequest)
