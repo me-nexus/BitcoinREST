@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         tv_lastPrice.text = "LastPrice: ${body.lastTradePrice}"
     }
 
+
     // start the service to observe the API updates, when activity hides
     override fun onStop() {
         // Poll the API evey 15 sec and show notification
