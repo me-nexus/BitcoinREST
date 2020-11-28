@@ -24,8 +24,6 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".service.TickerService" />
 
     </application>
 
